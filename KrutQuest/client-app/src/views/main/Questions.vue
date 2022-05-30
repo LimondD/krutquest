@@ -10,7 +10,7 @@
       <question :question="item" :key="item.id"></question>
       <br />
     </template>
-    <b-button variant="secondary" @click="finishGroup">Завершить блок</b-button>
+    <b-button variant="secondary" @click="finishGroup">Пропустить блок</b-button>
     <br />
   </div>
 </template>
@@ -51,7 +51,7 @@
       finishGroup: function () {        
         var vm = this
 
-        vm.$bvModal.msgBoxConfirm('Вы уверены, что хотите завершить блок?', {
+        vm.$bvModal.msgBoxConfirm('Вы уверены, что хотите пропустить блок?', {
           title: 'Подтверждение',
           size: 'lg',
           buttonSize: 'lg',
